@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+
+  header {
+    /* background-color: #aacbff; */
+    background-image: radial-gradient(circle, #4addff 0%, #4ac3ff 50%, dodgerblue 120%);
+    width: 70%;
+    border: 2px solid #484a4c;
+    border-radius: 250px 10px;
+    margin: auto;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    max-width: 1200px;
+    box-shadow: 4px 4px 6px 1px rgba(0,0,0, .3),
+    inset 0 0 20px 2px rgba(0,0,0, .2);
+  }
+
+  .main-title {
+    text-shadow: .04em .04em 1px #a8a8a8;
+    text-align: center;
+    font: bold 3em/.5 Trebucket;
+
+  }
+
+  .main-title2 {
+    text-align: center;
+    font: 1.3em/1 sans-serif;
+    color: #484a4c;
+  }
+
+  .subHeading {
+    text-align: center;
+    font: 1.5em/1 Courier;
+    color: rgba(229,13,120,.8);
+    margin: 50px 0;
+    text-shadow: 2px 2px 1.2px rgba(0,0,0, .2);
+  }
+
+  .main {
+    border: 7px double black;
+    background-color: #dbdbdb;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    padding: 50px 30px;
+    box-shadow: inset 0 0 40px 6px rgba(0,0,0, .6);
+    max-width: 1500px;
+  }
+
+  .tblhd {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+    color: blue;
+    line-height: 1.8em;
+  }
+
+  .big {
+    border: 0;
+    width:  80%;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
+    margin-top: 50px;
+}
+
+  .bold {
+    color: black;
+    font-weight: bold;
+  }
+
+  .red {
+    color: rgba(229,13,120,1);
+  }
+
+  .mainText {
+    width: 75%;
+    text-align: justify;
+    font-size: 1.2em;
+    font-family: Arial;
+    padding: 10px 10%;
+  }
+
+  .includes {
+    width: 70%;
+    float: left;
+  }
+
+  hr {
+    border: 0;
+    width:  35%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-family: Trebucket;
+    /* text-shadow: 3px 3px #a8a8a8; */
+    text-shadow: 2px 2px 1.2px rgba(0,0,0, .2);
+    padding-top: 10px;
+    font-size: 2.5em;
+    text-decoration: underline;
+    color: black;
+  }
+
+  /* Media Queries -------------------*/
+
+  @media (max-width: 1080px) {
+    header {
+      width: 80%;
+    }
+    .main-title {
+      font: bold 2em/.5 Trebucket;
+    }
+    .main-title2 {
+      font-size: 1em;
+    }
+    .main {
+      padding: 10px 10px;
+    }
+    .tblhd {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      padding-bottom: 0;
+      }
+    .big {
+      margin-top: 30px;
+      }
+  }
+
+  @media (max-width: 700px) {
+    header {
+      width: 100%;
+    }
+    .main-title {
+      font: bold 1.2em/.5 Trebucket;
+    }
+    .main-title2 {
+      font-size: .8em;
+    }
+    .subHeading {
+      font-size: 1em;
+      margin: 20px 0;
+    }
+    .main {
+      padding: 10px 10px;
+      }
+    .tblhd {
+      font-size: 1em;
+      line-height: 1.2em;
+      }
+    .big {
+      height: 1px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header {
+      width: 100%;
+    }
+    .main-title {
+      font: bold 1em/.5 Trebucket;
+    }
+    .main-title2 {
+      font-size: .6em;
+    }
+    .subHeading {
+      font-size: .8em;
+      margin: 10px 0;
+    }
+    .tblhd {
+      font-size: .8em;
+      line-height: 1em;
+      }
+  }
+
+
+  .title {
+    font-size: 1.5em;
+    font-family:sans-serif;
+    text-decoration: underline;
+    line-height: 30px;
+  }
+
+  .body {
+    font-family:  sans-serif;
+    font-size: 1em;
+    text-shadow: 1px 1px #a8a8a8;
+  }
+
+  .footer {
+    border: 3px solid black;
+    border-style: inset;
+    border-radius: 20px;
+    margin-top: 70px;
+    padding: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 1px 1px #a8a8a8;
+    clear: both;
+  }
+
+  li{
+    padding-bottom: 20px;
+  }
+
+  .imgBorder {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  </style>
+</head>
+
+
+<body>
+<!-- This is the Title Bar-->
+  <header>
+    <p class="main-title">Professional Delidding Service</p>
+    <hr>
+    <p class="main-title2">Socket 1151: <em>Coffee Lake, Kaby Lake, Sky Lake, etc.</em></p>
+  </header>
+
+  <p class="subHeading">
+    <b><big>*</big> 1-Day Turnaround - 100% Worry-free Guarantee <big>*</big></b>
+  </p>
+
+<div class="main">
+  <div class="tblhd">
+        <span class="red">* </span> <span class="bold"> Delidding </span>reduces temperatures up to 20C for extreme overclocking <span class="red">*</span><br>
+        <span class="red">* </span><span class="bold">IHS Lapping </span>further reduces temperatures up to 8C for the ultimate in thermal heat transfer <span class="red">*</span><br>
+        <span class="red">* </span><span class="bold">Binning </span>tells you exactly how high your OC potential is, and what voltage to use <span class="red">*</span>
+  <hr class="big" />
+  </div>
+  <div class="includes">
+          <h2>Delidding includes:</h2>
+          <ul class="mainText">
+            <li>Using Intel XTU and HWinfo 64, a 15-minute stress-test will be performed to record the pre-delidding temperatures.</li>
+            <li>The Integrated Heat Spreader (IHS) will then be carefully removed.</li>
+            <li>Intel's stock thermal paste will be removed with 99.9% Pure Isopropyl Alcohol, and the silicone will be scraped away using the iFixit Pro Tech Toolkit.</li>
+            <li>The exposed contacts under the IHS will be insulated using high-temperature Liquid Electrical Tape, thus preventing any possible future problems.</li>
+            <li>Thermal Grizzly's 73 W/mk high-conductivity Conductonaut liquid metal will be applied directly to the CPU die, as well as to the IHS.</li>
+            <li>Using J-B Weld Ultimate High-Temp Black Silicon, the IHS will be glued back down to the processor, and then clamped down tightly using the Rockit Cool Relid kit.</li>
+            <li>After the silicone has fully cured, the stress-test will be repeated to record the drop in tempuratres.</li>
+            <li>The CPU will then be packaged, and immediately shipped back to the owner using the shipping method already pre-purchased.</li>
+            <li>And lastly, an eBay message will be sent to the customer summarize the results of the service, and the <em>Before</em> and <em>After</em> screenshots will be attached.</li>
+          </ul>
+    </div>
+    <div class="includes">
+            <h2>IHS Lapping Includes:</h2>
+            <ul class="mainText">
+              <li>Lapping is performed on a 1/2" thick, glass table top to ensure a perfectly flat surface is created on the top of the IHS that contacts the CPU cooler.</li>
+              <li>High Performance 3M Wet/Dry sandpaper, grits 400, 600, 800, 1000, 1500, and 2000 will be used with a soapy solution to perform the lapping.</li>
+              <li>During the lapping process, the bottom of the IHS that gets glued back down to the chip will also be lapped to create the tightest possible fit over the CPU die</li>
+              <li>Following the wet-sanding: a Flex Shaft Rotary tool with a High-Quality Cotton Buff, and French imported Dialux Rouge (Red) Jewelers Rouge, will be used for the final polishing.</li>
+              <li>After achieving a mirror-like finish on the top of the IHS, the bottom of the IHS where it makes contact with the die will also be polished to remove any micro imperfections.</li>
+              <li>A lapped CPU will reduce temperatures up to an additional 8C, but typical results aren't this high unless the CPU Cooler is also lapped. The biggest advantage to having it done
+                  with the delidding service is that it can be performed while the IHS is removed from the chip, thus preventing any damage to it during the process. </li>
+            </ul>
+      </div>
+      <div class="includes">
+            <h2>Binning Includes:</h2>
+            <ul class="mainText">
+              <li>Binning the CPU will be done using a Corsair h100i v2 Extreme AIO water cooler. If requested, an air cooler can be used instead of the AIO to determine the highest OC.</li>
+              <li>Two OCing profiles will be included with the binning: [1] The highest OC at or below 1.435v.  [2] A more modest OC at ~1.3v. *If air cooling is requested, this will be reduced to ~1.26v.</li>
+              <li>Follow-up technical assistance with UEFI/BIOS settings will also be included if additional help is needed to achieve the desired OC.</li>
+              <li>Feel free to make any special requests for specific OC needs, or OC results for the binning process.</li>
+            </ul>
+      </div>
+      <footer>
+          <p class="footer">
+            <span class="title">SHIPPING</span><br><br>
+            <span class="body"> The shipping address will be provided immediatly after payment is received. </span><br><br><br>
+            <span class="title">WARRANTY</span><br><br>
+            * All Services Are 100% Guaranteed! In the unlikely event that the CPU is damaged during any of the Services, a replacement CPU of equal or greater value will be provided along with any of the Services purchased.
+          </p>
+      </footer>
+    </div>
+  </body>
+</html>
